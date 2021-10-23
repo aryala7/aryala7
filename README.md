@@ -1,7 +1,7 @@
 ```php
 <?php
 
-namespace AshBaker;
+namespace AryaLavasani;
 
 class About extends Me
 {
@@ -9,8 +9,8 @@ class About extends Me
     {
         return [
             'workplace' => [
-                'company' => 'Qquicker',
-                'position' => 'Founder'         
+                'company' => 'TookanTech',
+                'position' => 'Back-end Developer'         
             ]
         ];
     }
@@ -19,19 +19,17 @@ class About extends Me
     {
         return [
             Php::class,
-            Javascript::class,
             Laravel::class,
-            Vuejs::class,
-            Angular::class,
-            ReactNative::class,
-            TailwindCss::class,
-            Aws::class,
+            GraphQl::class,
+            Mysql::class,
+            Elasticsearch::class
+            Javascript::class,
         ];
     }
 
     public function getFutureGoal(): string
     {
-        return 'To contribute to open source.';
+        return 'To contribute to open source and make word a better place';
     }
 }
 ```
