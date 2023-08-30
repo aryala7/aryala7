@@ -29,7 +29,7 @@ class About extends Me
 
     public function getFutureGoal(): string
     {
-        return 'To contribute to open source and make word a better place';
+        return 'To contribute to open source and make world a better place';
     }
 }
 ```
