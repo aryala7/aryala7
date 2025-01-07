@@ -20,11 +20,13 @@ class About extends Me
         return [
             Php::class,
             Laravel::class,
+            Java::class,
+            Spring::class,
+            Javascript::class,
             GoLang::class,
             GraphQl::class,
             Mysql::class,
             Elasticsearch::class
-            Javascript::class,
         ];
     }
 
