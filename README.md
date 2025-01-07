@@ -1,38 +1,39 @@
-```php
-<?php
+```java
 
-namespace AryaLavasani;
+package com.aryalavassani;
 
-class About extends Me
-{
-    public function getCurrentWorkplace(): array
-    {
-        return [
-            'workplace' => [
-                'company' => 'Student',
-                'position' => 'Back-end Developer'         
-            ]
-        ];
+import java.util.Arrays;
+import java.util.List;
+import java.util.Map;
+
+public class About extends Me {
+
+    public Map<String, Object> getCurrentWorkplace() {
+        return Map.of(
+            "workplace", Map.of(
+                "company", "Student",
+                "position", "Back-end Developer"
+            )
+        );
     }
 
-    public function getDailyKnowledge(): array
-    {
-        return [
-            Php::class,
-            Laravel::class,
-            Java::class,
-            Spring::class,
-            Javascript::class,
-            GoLang::class,
-            GraphQl::class,
-            Mysql::class,
-            Elasticsearch::class
-        ];
+    public List<String> getDailyKnowledge() {
+        return Arrays.asList(
+             "Java",
+            "Spring",
+            "PHP",
+            "Laravel", 
+            "JavaScript",
+            "GoLang",
+            "GraphQL",
+            "MySQL",
+            "Elasticsearch"
+        );
     }
 
-    public function getFutureGoal(): string
-    {
-        return 'To contribute to open source and make world a better place';
+    public String getFutureGoal() {
+        return "To contribute to open source projects and make the world a better place";
     }
 }
+
 ```
